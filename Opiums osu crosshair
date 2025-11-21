@@ -1,0 +1,25 @@
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+UserInputService.MouseIconEnabled = false
+
+if playerGui:FindFirstChild("CustomCrosshair") then
+    playerGui.CustomCrosshair:Destroy()
+end
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "CustomCrosshair"
+gui.ResetOnSpawn = false
+gui.IgnoreGuiInset = true
+gui.Parent = playerGui
+
+local img = Instance.new("ImageLabel")
+img.Image = "rbxassetid://8390115370"
+img.Size = UDim2.new(0, 56, 0, 56)
+img.Position = UDim2.new(0.5, 0, 0.5, -75)
+img.AnchorPoint = Vector2.new(0.5, 0.5)
+img.BackgroundTransparency = 1
+img.Parent = gui
