@@ -1,0 +1,88 @@
+
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+
+local _wdocqvzol = function()
+    local Players = game:GetService((function()
+        local a={1077,1441,1298,1610,1350,1519,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+local UserInputService = game:GetService((function()
+        local a={1142,1532,1350,1519,986,1467,1493,1558,1545,1116,1350,1519,1571,1402,1324,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild((function()
+        local a={1077,1441,1298,1610,1350,1519,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+
+UserInputService.MouseIconEnabled = false
+
+if playerGui:FindFirstChild((function()
+        local a={908,1558,1532,1545,1480,1454,908,1519,1480,1532,1532,1389,1298,1402,1519};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()) then
+    playerGui.CustomCrosshair:Destroy()
+end
+
+local gui = Instance.new((function()
+        local a={1116,1324,1519,1350,1350,1467,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+gui.Name = (function()
+        local a={908,1558,1532,1545,1480,1454,908,1519,1480,1532,1532,1389,1298,1402,1519};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()
+gui.ResetOnSpawn = false
+gui.IgnoreGuiInset = true
+gui.Parent = playerGui
+
+local img = Instance.new((function()
+        local a={986,1454,1298,1376,1350,1025,1298,1311,1350,1441};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+img.Image = (function()
+        local a={1519,1311,1597,1298,1532,1532,1350,1545,1402,1337,791,648,648,674,674,752,674,739,726,739,661,674,752,752};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()
+img.Size = UDim2.new(0, 56, 0, 56)
+img.Position = UDim2.new(0.5, 0, 0.5, -75)
+img.AnchorPoint = Vector2.new(0.5, 0.5)
+img.BackgroundTransparency = 1
+img.Parent = gui
+end;
+_wdocqvzol();
